@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>FormUtilisateurServlet</servlet-name>
+        <servlet-class>servlet.FormUtilisateurServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FormUtilisateurServlet</servlet-name>
+        <url-pattern>/FormUtilisateurServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>TraitementStatistique</servlet-name>
+        <servlet-class>servlet.TraitementStatistique</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TraitementStatistique</servlet-name>
+        <url-pattern>/TraitementStatistique</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>TraitementStatRevenueMensuel</servlet-name>
+        <servlet-class>servlet.TraitementStatRevenueMensuel</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TraitementStatRevenueMensuel</servlet-name>
+        <url-pattern>/TraitementStatRevenueMensuel</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>TraitementStatReservationMensuel</servlet-name>
+        <servlet-class>servlet.TraitementStatReservationMensuel</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TraitementStatReservationMensuel</servlet-name>
+        <url-pattern>/TraitementStatReservationMensuel</url-pattern>
+    </servlet-mapping>
+
+        
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
